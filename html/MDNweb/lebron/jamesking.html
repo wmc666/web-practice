@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="wmc666" content="width=device-width">
+    <title>Lebron James</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      /* header and body setup */
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+      /* Header styling */
+      header {
+        height: 150px;
+      }
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+      /* main section and video styling */
+      main {
+        background: #ccc;
+      }
+      article {
+        padding: 20px;
+      }
+      h2 {
+        margin-top: 0;
+      }
+      p {
+        line-height: 2;
+      }
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+      /* further info links */
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+      .further-info img {
+        max-width: 100%;
+      }
+      .further-info picture {
+        max-width: 100%;
+      }
+      .clearfix {
+        clear: both;
+      }
+      /* Red panda image */
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Lebron James</h1>
+      <img src="originals/logo.jpg">
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+
+    </header>
+
+    <main>
+      <article>
+        <!-- insert iframe from youtube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/soXYntMDQec" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        <h2>LeBron James</h2>
+
+        <p></p>LeBron Raymone James Sr.（born December 30, 1984) 
+        is an American professional basketball player for the Los Angeles Lakers of the National Basketball Association (NBA). 
+        Often considered the best basketball player in the world and regarded by some as the greatest player of all time,
+        James' accomplishments are extensive and include four NBA Most Valuable Player Awards, three NBA Finals MVP Awards, 
+        two Olympic gold medals, three All-Star Game MVP awards, and an NBA scoring title. 
+        He is the all-time NBA playoffs scoring leader and has amassed fourteen NBA All-Star Game appearances, 
+        twelve All-NBA First Team designations, 
+        and five All-Defensive First Team honors.</p>
+
+      </article>
+
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://en.wikipedia.org/wiki/LeBron_James">
+          <picture>
+            <source media="(max-width:479)" srcset="originals/lebron120.jpg">
+            <source media="(min-width:480)" srcset="originals/lebron400.jpg">
+            <img src="originals/lebron400.jpg" alt="lebron">
+          </picture> 
+        </a>
+        <a href="https://en.wikipedia.org/wiki/LeBron_James">
+          <picture>
+              <source media="(max-width:399>" srcset="originals/lbj120.png">
+              <source media="(min-width:400>" srcset="originals/lbj400.png">
+              <img src="originals/lbj400.png" alt="lbjr">
+            </picture>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/LeBron_James">
+          <picture>
+              <source media="(max-width:479)" srcset="originals/james120.jpg">
+              <source media="(min-width:480)" srcset="originals/james400.jpg">
+              <img src="originals/james400.jpg" alt="james">
+            </picture>
+        </a>
+        <a href="https://en.wikipedia.org/wiki/LeBron_James">
+          <picture>
+            <source media="(max-width:599)" srcset="originals/king120.jpg">
+            <source media="(min-width:600)" srcset="originals/king400.jpg">
+            <img src="originals/king400.jpg" alt="king">
+          </picture>
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+          <picture>
+              <source media="(max-width:599)" srcset="originals/champion600.jpg">
+              <source media="(min-width:600)" srcset="originals/champion1200.jpg">
+              <img src="originals/champion1200.jpg" alt="champion">
+            </picture>
+      </div>
+
+    </main>
+  </body>
+</html>
